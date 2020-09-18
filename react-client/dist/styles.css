@@ -1,0 +1,46 @@
+.select-bar {
+  padding: 10px;
+  border: 1px solid black;
+  width: 250px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.chev {
+  height: 25px;
+  width: 25px;
+  float: right;
+}
+
+
+.select-item {
+  width: 200px;
+  border: 0px;
+
+}
+
+.select-item:focus {
+  outline: 0;
+}
+
+.close {
+  display: none;
+}
+
+.option-items {
+  border: 1px solid black;
+  border-top: 0;
+  width: 250px;
+  padding: 10px;
+}
+
+.option-item {
+  cursor: pointer;
+  padding: 10px;
+}
+.option-item:hover{
+  cursor: pointer;
+  padding: 10px;
+  color: darkcyan;
+}
+
