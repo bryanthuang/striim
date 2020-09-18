@@ -18,10 +18,13 @@ export default class Select extends React.Component {
     })
   }
   handleXClick = (e) => {
+    const {options} = this.props;
     e.preventDefault();
     this.setState({
       value: "",
-      label: ""
+      label: "",
+      filteredOptions: options,
+      open: false
     })
   }
 
