@@ -25,7 +25,7 @@ class App extends React.Component {
     const {options} = this.state;
     return (
       <div>
-        <Select options={options}/>
+        <Select options={options} searchable={true}/>
       </div>
     )
   }
