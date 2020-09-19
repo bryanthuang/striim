@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import $ from 'jquery';
-import axios from 'axios';
-import Select from './components/Select.jsx'
+import Select from './components/Select'
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -14,12 +13,18 @@ class App extends React.Component {
       ],
     }
   }
+  componentDidMount() {
+    let options = this.getData();
+    this.setState({
+      options: options
+    })
+  }
 
-  // getData(currentValue) {
-  //   axios.get('/data').then(response => {
-  //     console.log(response.data);
-  //   })
-  // }
+  getData(currentValue) {
+    axios.get('/data').then(response => {
+      console.log(response.data);
+    })
+  }
 
   render () {
     const {options} = this.state;

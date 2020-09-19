@@ -19,7 +19,12 @@ app.get('/items', function (req, res) {
 });
 
 app.get('/data', function(req, res) {
-
+  let options =  [
+    { value: 'chocolate', label: 'Chocolate' },
+    { value: 'strawberry', label: 'Strawberry' },
+    { value: 'vanilla', label: 'Vanilla' }
+  ]
+  res.json(options)
 })
 
 app.listen(3000, function() {
